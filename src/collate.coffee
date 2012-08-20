@@ -40,8 +40,8 @@ class _Collator
 			console.log "#{(new Date).toLocaleTimeString()} - collated #{path.basename @target}" unless err
 			if err and err isnt compilationError
 				console.log err
-			if typeof @options.callback is "function"
-				@options.callback err
+
+
 			if @options.watch
 				@_rewatch()
 
