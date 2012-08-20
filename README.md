@@ -15,7 +15,7 @@ Use the -g flag for global access to the command line utility.
 As a module:
 
 	Collate = require('collate');
-	Collate.collate('styles.css', ['main.less', 'home.css'], { basedir: 'styles/' });
+	Collate.collate('styles.css', ['main.less', 'home.css'], { basedir: 'styles/', callback: function(err){} });
 	
 From the command line:
 
