@@ -106,7 +106,7 @@
         if (err && err !== compilationError) {
           console.log(err);
         }
-        if (!err && typeof _this.options.callback === "function") {
+        if (typeof _this.options.callback === "function") {
           _this.options.callback(err);
         }
         if (_this.options.watch) {
